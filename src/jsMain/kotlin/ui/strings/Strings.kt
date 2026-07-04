@@ -7,6 +7,7 @@ import ui.strings.Language.French
 import ui.strings.Language.Japanese
 import ui.strings.Language.Russian
 import ui.strings.Language.SimplifiedChinese
+import ui.strings.Language.Portuguese
 
 enum class Strings(
     val en: String,
@@ -14,6 +15,7 @@ enum class Strings(
     val zhCN: String,
     val ru: String = en,
     val fr: String = en,
+    val pt: String = en,
 ) {
     LanguageDisplayName(
         en = English.displayName,
@@ -21,6 +23,7 @@ enum class Strings(
         zhCN = SimplifiedChinese.displayName,
         ru = Russian.displayName,
         fr = French.displayName,
+        pt = Portuguese.displayName,
     ),
     ReportFeedbackTooltip(
         en = "Send feedback",
@@ -28,6 +31,7 @@ enum class Strings(
         zhCN = "提交反馈",
         ru = "Отправить отзыв",
         fr = "Envoyer vos retours",
+        pt = "Enviar feedback",
     ),
     FrequentlyAskedQuestionTooltip(
         en = "Frequently Asked Questions",
@@ -35,6 +39,7 @@ enum class Strings(
         zhCN = "常见问题解答",
         ru = "Часто задаваемые вопросы",
         fr = "Questions Fréquemment Posées",
+        pt = "Perguntas Frequentes",
     ),
     ImportProjectCaption(
         en = "Import Project",
@@ -42,6 +47,7 @@ enum class Strings(
         zhCN = "导入工程",
         ru = "Импортирование проекта",
         fr = "Importation de projet",
+        pt = "Importar Projeto",
     ),
     SelectOutputFormatCaption(
         en = "Select Output Format",
@@ -49,6 +55,7 @@ enum class Strings(
         zhCN = "选择输出格式",
         ru = "Выбор выходного формата",
         fr = "Sélectionner le Format de Sortie",
+        pt = "Selecione o Formato de Saída",
     ),
     ConfigurationEditorCaption(
         en = "Configuration",
@@ -56,6 +63,7 @@ enum class Strings(
         zhCN = "设置",
         ru = "Конфигурация",
         fr = "Configuration",
+        pt = "Configurações",
     ),
     ExportCaption(
         en = "Export",
@@ -63,6 +71,7 @@ enum class Strings(
         zhCN = "导出",
         ru = "Экспорт",
         fr = "Exportation",
+        pt = "Exportação",
     ),
     ExporterTitleSuccess(
         en = "Process finished successfully.",
@@ -70,6 +79,7 @@ enum class Strings(
         zhCN = "处理已完成。",
         ru = "Процесс успешно завершен",
         fr = "Processus terminé avec succès.",
+        pt = "Processo finalizado com sucesso",
     ),
     LyricsTypeUnknown(
         en = "Unknown",
@@ -77,6 +87,7 @@ enum class Strings(
         zhCN = "未知",
         ru = "Неизвестно",
         fr = "Inconnu",
+        pt = "Desconhecido",
     ),
     LyricsTypeRomajiCV(
         en = "Romaji CV",
@@ -84,6 +95,7 @@ enum class Strings(
         zhCN = "罗马字单独音",
         ru = "Ромадзи CV",
         fr = "Romaji CV",
+        pt = "Romaji CV",
     ),
     LyricsTypeRomajiVCV(
         en = "Romaji VCV",
@@ -91,6 +103,7 @@ enum class Strings(
         zhCN = "罗马字连续音",
         ru = "Ромадзи VCV",
         fr = "Romaji VCV",
+        pt = "Romaji VCV",
     ),
     LyricsTypeKanaCV(
         en = "Kana CV",
@@ -98,6 +111,7 @@ enum class Strings(
         zhCN = "假名单独音",
         ru = "Кана CV",
         fr = "Kana CV",
+        pt = "Kana CV",
     ),
     LyricsTypeKanaVCV(
         en = "Kana VCV",
@@ -105,6 +119,7 @@ enum class Strings(
         zhCN = "假名连续音",
         ru = "Кана VCV",
         fr = "Kana VCV",
+        pt = "Kana VCV",
     ),
     JapaneseLyricsConversion(
         en = "Cleanup and convert lyrics (only for Japanese lyrics)",
@@ -112,6 +127,7 @@ enum class Strings(
         zhCN = "清理并转换歌词（仅日语）",
         ru = "Очистка и преобразование текстов (только для японских текстов)",
         fr = "Nettoyage et conversion des paroles (seulement pour les paroles en japonais)",
+        pt = "Limpar e converter letras (apenas para letras Japonesas)",
     ),
     FromLyricsTypeLabel(
         en = "Original lyrics type (analysis result: {{type}})",
@@ -119,6 +135,7 @@ enum class Strings(
         zhCN = "原歌词类型（分析结果为：{{type}}）",
         ru = "Исходный тип текстов (результат анализа: {{type}})",
         fr = "Type de paroles originales (résultat de l'analyse : {{type}})",
+        pt = "Tipo das letras originais (resultado da análise: {{type}}",
     ),
     ToLyricsTypeLabel(
         en = "Target lyrics type",
@@ -126,6 +143,7 @@ enum class Strings(
         zhCN = "目标歌词类型",
         ru = "Целевой тип текстов",
         fr = "Type de paroles cible",
+        pt = "Tipo de letra da música",
     ),
     ChinesePinyinConversion(
         en = "Convert lyrics in Chinese characters to Pinyin",
@@ -133,6 +151,7 @@ enum class Strings(
         zhCN = "将中文汉字歌词转换为拼音",
         ru = "Преобразовать тексты на китайском языке в пиньинь",
         fr = "Convertir les paroles en caractères chinois en pinyin",
+        pt = "Converter letras em caracteres chineses para Pinyin",
     ),
     LyricsReplacement(
         en = "Replace lyrics",
@@ -140,6 +159,7 @@ enum class Strings(
         zhCN = "替换歌词",
         ru = "Заменить тексты",
         fr = "Remplacer les paroles",
+        pt = "Substituir letras",
     ),
     LyricsReplacementDescription(
         en =
@@ -163,6 +183,11 @@ enum class Strings(
                 "du format d'origine et du format cible. Si vous utilisez \"{{regex}}\" comme \"{{matchType}}\", " +
                 "vous pouvez utiliser des caractères de remplacement comme \"\$1\", \"$2\", etc. dans \"{{to}}\" " +
                 "pour remplir les groupes capturés.",
+        pt =
+            "Substitua as letras que passam no filtro.\n- As predefinições são carregadas de acordo com o formato original e " +
+                "do formato de origem e do formato de destino. Se você usar \"{{regex}}\" como o \"{{matchType}}\", " +
+                "Você pode usar marcadores de posição como \"\$1\", \"$2\", etc., em \"{{to}}\" " +
+                "para preencher os grupos selecionados.",
     ),
     LyricsReplacementItemLabel(
         en = "#{{number}}",
@@ -170,6 +195,7 @@ enum class Strings(
         zhCN = "#{{number}}",
         ru = "#{{number}}",
         fr = "#{{number}}",
+        pt = "#{{number}}",
     ),
     LyricsReplacementAddItemButton(
         en = "Add replacement rule",
@@ -177,6 +203,7 @@ enum class Strings(
         zhCN = "添加替换规则",
         ru = "Добавить правило переноса",
         fr = "Ajouter une règle de remplacement",
+        pt = "Adicionar regra de substituição",
     ),
     LyricsReplacementFilterTypeLabel(
         en = "Filter type",
@@ -184,6 +211,7 @@ enum class Strings(
         zhCN = "过滤器类型",
         ru = "Тип фильтра",
         fr = "Type de filtre",
+        pt = "Tipo de filtro",
     ),
     LyricsReplacementFilterTypeNone(
         en = "None",
@@ -191,6 +219,7 @@ enum class Strings(
         zhCN = "无",
         ru = "Нет",
         fr = "Aucun",
+        pt = "Nenhum",
     ),
     LyricsReplacementFilterTypeExact(
         en = "Exact",
@@ -198,6 +227,7 @@ enum class Strings(
         zhCN = "完全匹配",
         ru = "Точный",
         fr = "Exact",
+        pt = "Exato",
     ),
     LyricsReplacementFilterTypeContaining(
         en = "Containing",
@@ -205,6 +235,7 @@ enum class Strings(
         zhCN = "包含",
         ru = "Содержащий",
         fr = "Contenant",
+        pt = "Contendo",
     ),
     LyricsReplacementFilterTypePrefix(
         en = "Prefix",
@@ -212,6 +243,7 @@ enum class Strings(
         zhCN = "前缀",
         ru = "Префикс",
         fr = "Préfixe",
+        pt = "Prefixo",
     ),
     LyricsReplacementFilterTypeSuffix(
         en = "Suffix",
@@ -219,6 +251,7 @@ enum class Strings(
         zhCN = "后缀",
         ru = "Суффикс",
         fr = "Suffixe",
+        pt = "Sufixo",
     ),
     LyricsReplacementFilterTypeRegex(
         en = "Regex",
@@ -226,6 +259,7 @@ enum class Strings(
         zhCN = "正则表达式",
         ru = "Регулярное выражение",
         fr = "Regex",
+        pt = "Regex",
     ),
     LyricsReplacementFilterTextLabel(
         en = "Filter",
@@ -233,6 +267,7 @@ enum class Strings(
         zhCN = "过滤器",
         ru = "Фильтр",
         fr = "Filtre",
+        pt = "Filtrar"
     ),
     LyricsReplacementMatchTypeLabel(
         en = "Match type",
@@ -240,6 +275,7 @@ enum class Strings(
         zhCN = "匹配类型",
         ru = "Тип совпадения",
         fr = "Type de match",
+        pt = "Tipo de correspondência",
     ),
     LyricsReplacementMatchTypeAll(
         en = "All",
@@ -247,6 +283,7 @@ enum class Strings(
         zhCN = "全部",
         ru = "Все",
         fr = "Tout",
+        pt = "Tudo",
     ),
     LyricsReplacementMatchTypeExact(
         en = "Exact",
@@ -254,6 +291,7 @@ enum class Strings(
         zhCN = "完全匹配",
         ru = "Точный",
         fr = "Exact",
+        pt = "Exato",
     ),
     LyricsReplacementMatchTypeRegex(
         en = "Regex",
@@ -261,6 +299,7 @@ enum class Strings(
         zhCN = "正则表达式",
         ru = "Регулярное выражение",
         fr = "Regex",
+        pt = "Regex",
     ),
     LyricsReplacementFromTextLabel(
         en = "From",
@@ -268,6 +307,7 @@ enum class Strings(
         zhCN = "替换源",
         ru = "Из",
         fr = "De",
+        pt = "De",
     ),
     LyricsReplacementToTextLabel(
         en = "To",
@@ -275,6 +315,7 @@ enum class Strings(
         zhCN = "替换为",
         ru = "До",
         fr = "À",
+        pt = "Para",
     ),
     LyricsMapping(
         en = "Map lyrics to lyrics or phonemes",
@@ -282,6 +323,7 @@ enum class Strings(
         zhCN = "将歌词映射到歌词或音素",
         ru = "Сопоставление текстов с текстами или фонемами",
         fr = "Mapper les paroles sur les paroles ou les phonèmes",
+        pt = "Mapear letras para letras ou fonemas",
     ),
     LyricsMappingDescription(
         en = "Only lyrics that is completely same as the key will be mapped. ",
@@ -289,6 +331,7 @@ enum class Strings(
         zhCN = "只有与键完全相同的歌词才会被映射。",
         ru = "Будут отображены только те тексты, которые полностью совпадают с ключом. ",
         fr = "Seules les paroles qui sont complètement identiques à la clé seront mappées.",
+        pt = "Apenas letras totalmente idênticas à chave serão mapeadas.",
     ),
     LyricsMappingPreset(
         en = "Preset",
@@ -296,6 +339,7 @@ enum class Strings(
         zhCN = "预设",
         ru = "Пресет",
         fr = "Préréglage",
+        pt = "Predefinição",
     ),
     LyricsMappingPresetClear(
         en = "Clear",
@@ -303,6 +347,7 @@ enum class Strings(
         zhCN = "清空",
         ru = "Очистить",
         fr = "Effacer",
+        pt = "Limpar",
     ),
     LyricsMappingToPhonemes(
         en = "Write as phonemes instead",
@@ -310,6 +355,7 @@ enum class Strings(
         zhCN = "写入到音素",
         ru = "Записать вместо фонем",
         fr = "Écrire comme phonèmes",
+        pt = "Escrever como fonemas",
     ),
     LyricsMappingMapPlaceholder(
         en = "Write a mapping entry per line in the format of \"{from}={to}\".",
@@ -317,6 +363,7 @@ enum class Strings(
         zhCN = "请按照“{from}={to}”的格式，每行写入一个映射条目。",
         ru = "Запишите запись отображения на строку в формате \"{from}={to}\".",
         fr = "Écrivez une entrée de mappage par ligne au format \"{from}={to}\".",
+        pt = "Escrever uma entrada de mapeamento por linha no formato de \"{from}={to}\".",
     ),
     PhonemesConversion(
         en = "Convert phonemes",
@@ -324,6 +371,7 @@ enum class Strings(
         zhCN = "转换音素",
         ru = "Конвертировать фонемы",
         fr = "Convertir les phonèmes",
+        pt = "Converter fonemas",
     ),
     PhonemesConversionEnableMapping(
         en = "Map phonemes",
@@ -331,6 +379,7 @@ enum class Strings(
         zhCN = "映射音素",
         ru = "Отобразить фонемы",
         fr = "Mapper les phonèmes",
+        pt = "Mapear fonemas",
     ),
     PhonemesConversionEnableMappingDescription(
         en = "Enable phonemes mapping with a customizable mapping table. If disabled, phonemes are copied as is.",
@@ -342,6 +391,7 @@ enum class Strings(
         fr =
             "Activer le mappage des phonèmes avec une table de mappage personnalisable. " +
                 "Si désactivé, les phonèmes sont copiés tels quels.",
+        pt = "Ative o mapeamento de fonemas com uma tabela de mapeamento personalizável. Se desativado, os fonemas são copiados como estão.",
     ),
     PhonemesMappingPreset(
         en = "Preset",
@@ -349,6 +399,7 @@ enum class Strings(
         zhCN = "预设",
         ru = "Пресет",
         fr = "Préréglage",
+        pt = "Predefinição",
     ),
     PhonemesMappingPresetNoOption(
         en = "No available preset",
@@ -356,6 +407,7 @@ enum class Strings(
         zhCN = "没有可用的预设",
         ru = "Нет доступных пресетов",
         fr = "Aucun préréglage disponible",
+        pt = "Predefinição não disponível",
     ),
     PhonemesMappingPresetClear(
         en = "Clear",
@@ -363,6 +415,7 @@ enum class Strings(
         zhCN = "清空",
         ru = "Очистить",
         fr = "Effacer",
+        pt = "Limpar",
     ),
     PhonemesMappingMapPlaceholder(
         en =
@@ -378,6 +431,9 @@ enum class Strings(
         fr =
             "Écrivez une entrée de mappage par ligne au format \"{from}={to}\". " +
                 "L'espace blanc \" \" peut être utilisé pour combiner plusieurs phonèmes en un ensemble.",
+        pt =
+            "Escreva uma entrada de mapeamento por linha no formato de \"{from}={to}\". " +
+                "Espaços em branco \" \" podem ser usados ​​para combinar múltiplos fonemas em um conjunto.",
     ),
     ConvertPitchData(
         en = "Convert pitch parameters",
@@ -385,6 +441,7 @@ enum class Strings(
         zhCN = "转换音高参数",
         ru = "Конвертировать параметры питча",
         fr = "Convertir les paramètres de hauteur",
+        pt = "Converter configurações de altura",
     ),
     ConvertPitchDataDescription(
         en = "It may take some time to process with this option.",
@@ -392,6 +449,7 @@ enum class Strings(
         zhCN = "该选项可能会增加处理时间。",
         ru = "Обработка с помощью этого параметра может занять некоторое время.",
         fr = "Le traitement peut prendre un certain temps avec cette option.",
+        pt = "O processamento com esta opção pode levar algum tempo.",
     ),
     ProjectZoom(
         en = "Zoom in/out project",
@@ -399,6 +457,7 @@ enum class Strings(
         zhCN = "缩放工程",
         ru = "Приблизить/отдалить проект",
         fr = "Zoom avant/arrière du projet",
+        pt = "Projeto de zoom in/out",
     ),
     ProjectZoomDescription(
         en =
@@ -418,6 +477,9 @@ enum class Strings(
             "Changez les bpm et les notes en parallèle afin de conserver la vitesse réelle du chant." +
                 " Par exemple, avec le facteur 2, 60 bpm devient 120 bpm," +
                 " et toutes les notes deviennent deux fois plus longues.",
+        pt =
+            "Mude Bpm e as notas em paralelo para que a velocidade real de canto seja mantida. Por exemplo," +
+                "com um fator de 2, 60 bpm passam a ser 120 bpm e todas as notas passam a ter o dobro da duração.",
     ),
     ProjectZoomWarning(
         en = "Current settings may be destructive because some time signatures have to be moved to measure heads.",
@@ -429,6 +491,7 @@ enum class Strings(
         fr =
             "Les paramètres actuels peuvent être destructeurs," +
                 " car certaines signatures temporelles seront déplacées au début de la mesure.",
+        pt = "As configurações atuais podem ser destrutivas, pois algumas fórmulas de compasso precisam ser movidas para o início dos compassos.",
     ),
     ProjectZoomLabel(
         en = "Factor",
@@ -436,6 +499,7 @@ enum class Strings(
         zhCN = "系数",
         ru = "Коэффицент",
         fr = "Coefficient",
+        pt = "Fator",
     ),
     ProjectSplit(
         en = "Split project",
@@ -443,6 +507,7 @@ enum class Strings(
         zhCN = "分割工程",
         ru = "Разделить проект",
         fr = "Diviser le projet",
+        pt = "Dividir projeto",
     ),
     ProjectSplitDescription(
         en = "If the project has more tracks than the specified number, it will be split into multiple projects.",
@@ -450,6 +515,7 @@ enum class Strings(
         zhCN = "如果工程的轨道数超过指定的数量，它将被分割成多个工程。",
         ru = "Если в проекте больше дорожек, чем указанное количество, он будет разделен на несколько проектов.",
         fr = "Si le projet a plus de pistes que le nombre spécifié, il sera divisé en plusieurs projets.",
+        pt = "Se esse projeto tem mais faixas do que o número especificado, o projeto se divide em múltiplos projetos.",
     ),
     ProjectSplitMaxTrackCountLabel(
         en = "Max track count",
@@ -457,6 +523,7 @@ enum class Strings(
         zhCN = "最大轨道数",
         ru = "Максимальное количество дорожек",
         fr = "Nombre maximal de pistes",
+        pt = "Número máximo de faixas",
     ),
     NextButton(
         en = "Next",
@@ -464,6 +531,7 @@ enum class Strings(
         zhCN = "下一步",
         ru = "Далее",
         fr = "Suivant",
+        pt = "Próximo",
     ),
     ConfirmButton(
         en = "OK",
@@ -471,6 +539,7 @@ enum class Strings(
         zhCN = "确定",
         ru = "ОК",
         fr = "OK",
+        pt = "OK",
     ),
     CancelButton(
         en = "Cancel",
@@ -478,6 +547,7 @@ enum class Strings(
         zhCN = "取消",
         ru = "Назад",
         fr = "Annuler",
+        pt = "Cancelar",
     ),
     ReportButton(
         en = "Report",
@@ -485,6 +555,7 @@ enum class Strings(
         zhCN = "提交报告",
         ru = "Сообщить",
         fr = "Signaler",
+        pt = "Reportar",
     ),
     DoNotShownAgainButton(
         en = "Don't show again",
@@ -492,6 +563,7 @@ enum class Strings(
         zhCN = "不再显示",
         ru = "Больше не показывать",
         fr = "Ne plus afficher",
+        pt = "Não mostrar novamente",
     ),
     ImportFileDescription(
         en = "Drop files or Click to import",
@@ -499,6 +571,7 @@ enum class Strings(
         zhCN = "拖放文件或点击导入",
         ru = "Перетащите файлы или нажмите, чтобы импортировать",
         fr = "Déposer les fichiers ou Cliquer ici pour importer",
+        pt = "Arraste os arquivos ou clique para importar",
     ),
     ImportFileSubDescription(
         en =
@@ -516,6 +589,9 @@ enum class Strings(
         fr =
             "Types de fichiers pris en charge : VSQX, VPR, VSQ, MID, USTs," +
                 " USTX, CCS, MUSICXML, XML, SVP, S5P, DV, PPSF(NT), TSSLN, UFDATA",
+        pt =
+            "Tipos de arquivos suportados: VSQX, VPR, VSQ, MID, USTs," +
+                " USTX, CCS, MUSICXML, XML, SVP, S5P, DV, PPSF(NT), TSSLN, UFDATA",
     ),
     UnsupportedFileTypeImportError(
         en = "Unsupported file type",
@@ -523,6 +599,7 @@ enum class Strings(
         zhCN = "不支持的文件类型",
         ru = "Неподдерживаемый формат файла",
         fr = "Type de fichier non supporté",
+        pt = "Tipo de arquivo não suportado",
     ),
     UnsupportedLegacyPpsfError(
         en = "Legacy ppsf file format is not supported (only ppsf for Piapro Studio NT is supported)",
@@ -532,6 +609,7 @@ enum class Strings(
         fr =
             "Le format de fichier ppsf hérité n'est pas pris en charge (seul ppsf pour Piapro Studio NT " +
                 "est pris en charge)",
+        pt = "Esse tipo de arquivo ppsf não é suportado (apenas ppsf para Piapro Studio NT é suportado)",
     ),
     MultipleFileImportError(
         en = "Multiple files of {{format}} could not be imported in one go",
@@ -539,6 +617,7 @@ enum class Strings(
         zhCN = "无法同时导入多个{{format}}文件",
         ru = "Несколько файлов {{format}} не удалось импортировать за один раз",
         fr = "Plusieurs fichiers de {{format}} n'ont pas pu être importés en une seule fois",
+        pt = "Não foi possível importar vários arquivos do formato {{format}} de uma só vez",
     ),
     ImportErrorDialogTitle(
         en = "Failed to import the project",
@@ -546,6 +625,7 @@ enum class Strings(
         zhCN = "无法导入该工程",
         ru = "Не удалось импортировать проект",
         fr = "Échec de l'importation du projet",
+        pt = "Erro ao importar o projeto",
     ),
     ProcessErrorDialogTitle(
         en = "An error happened during the process",
@@ -553,6 +633,7 @@ enum class Strings(
         zhCN = "在处理中发生了以下错误",
         ru = "Во время процесса произошла ошибка",
         fr = "Une erreur s'est produite pendant le processus",
+        pt = "Um erro ocorreu durante o processo"
     ),
     ErrorDialogDescription(
         en =
@@ -567,6 +648,9 @@ enum class Strings(
             "Si vous rencontrez des problèmes, aidez-nous à collecter des informations sur les erreurs" +
                 " pour une meilleure performance de cette application en soumettant" +
                 " un rapport de vos retours. (SEULEMENT EN ANGLAIS)",
+        pt =
+            "Se você encontrou algum problema, por favor, nos ajude a coletar a informação do erro" +
+                " para melhorar a perfomance desse aplicativo ao enviar um relatório de feedback.",
     ),
     ReportUrl(
         en = "https://forms.gle/3Es3ZomcYKNHWBvp6",
@@ -574,6 +658,7 @@ enum class Strings(
         zhCN = "https://forms.gle/nJVdrsfwMhbNXEYUA",
         ru = "https://forms.gle/vTNUE78QzURB7YcBA",
         fr = "https://forms.gle/3Es3ZomcYKNHWBvp6",
+        pt = "https://forms.gle/gC12qSHsysGhecuB9",
     ),
     FaqUrl(
         en = "https://gist.githubusercontent.com/sdercolin/4d835e7e201a39504f5321f67d254209/raw",
@@ -581,6 +666,7 @@ enum class Strings(
         zhCN = "https://gist.githubusercontent.com/sdercolin/1a940a1357e2a6a5c10561482536bdba/raw",
         ru = "https://gist.githubusercontent.com/KagamineP/d5837aa5f1b3be3b05aed5cd63b2afe2/raw",
         fr = "https://gist.githubusercontent.com/Exorcism0666/29e1c09eb471bccc270cc0a02992a0b1/raw",
+        pt = "https://gist.githubusercontent.com/tokarusuki/b2257d355993eaac424fe224cded51f5/raw",
     ),
     ReleaseNotesUrl(
         en = "https://gist.githubusercontent.com/sdercolin/512db280480072f22cf1d462401eb1a0/raw",
@@ -588,12 +674,14 @@ enum class Strings(
         zhCN = "https://gist.githubusercontent.com/sdercolin/512db280480072f22cf1d462401eb1a0/raw",
         ru = "https://gist.githubusercontent.com/sdercolin/512db280480072f22cf1d462401eb1a0/raw",
         fr = "https://gist.githubusercontent.com/sdercolin/512db280480072f22cf1d462401eb1a0/raw",
+        pt = "https://gist.githubusercontent.com/tokarusuki/7b0ec5f84821d2225c6962ec806e4be9/raw",
     ),
     GoogleAnalyticsUsageInfoUrl(
         en = "https://gist.githubusercontent.com/sdercolin/b5d4cf81434ea381d8836e0015681029/raw",
         ja = "https://gist.githubusercontent.com/sdercolin/b5d4cf81434ea381d8836e0015681029/raw",
         zhCN = "https://gist.githubusercontent.com/sdercolin/b5d4cf81434ea381d8836e0015681029/raw",
         ru = "https://gist.githubusercontent.com/KagamineP/71234d007f2674b2f8fd8b74d2ebb8fc/raw",
+        pt = "https://gist.githubusercontent.com/tokarusuki/7afd5a435ab6e1bc84e20628a5173d78/raw",
     ),
     ImportWarningTitle(
         en = "The following exceptions happened during the import process.",
@@ -601,6 +689,7 @@ enum class Strings(
         zhCN = "导入过程中出现了下列异常。",
         ru = "В процессе импорта произошли следующие исключения.",
         fr = "Les exceptions suivantes se sont produites pendant le processus d'importation.",
+        pt = "As seguintes exceções ocorreram durante o processo de importação.",
     ),
     ImportWarningTempoNotFound(
         en = "- No tempo labels found in the imported project.",
@@ -608,6 +697,7 @@ enum class Strings(
         zhCN = "- 在导入的工程中未找到速度记号。",
         ru = "- Метки темпа не найдены в импортированном проекте.",
         fr = "- Aucun tempo n'a été trouvée dans le projet importé.",
+        pt = "- Nenhuma etiqueta de tempo foi encontrada no projeto importado.",
     ),
     ImportWarningTempoIgnoredInFile(
         en = "- Tempo label ({{bpm}}) at tick {{tick}} in file [{{file}}] was ignored.",
@@ -615,6 +705,7 @@ enum class Strings(
         zhCN = "- 未能读取文件[{{file}}]中 tick {{tick}} 处的速度记号（{{bpm}}）。",
         ru = "- Метка темпа ({{bpm}}) на отметке {{tick}} в файле [{{file}}] была проигнорирована.",
         fr = "- Le tempo ({{bpm}}) au tick {{tick}} du fichier [{{file}}] a été ignorée.",
+        pt = "- O tempo ({{bpm}}) no tick {{tick}} no arquivo [{{file}}] foi ignorado.",
     ),
     ImportWarningTempoIgnoredInTrack(
         en = "- Tempo label ({{bpm}}) at tick {{tick}} in Track {{number}}: [{{name}}] was ignored.",
@@ -622,6 +713,7 @@ enum class Strings(
         zhCN = "- 未能读取音轨{{number}}：[{{name}}]中tick {{tick}}处的速度记号（{{bpm}}）。",
         ru = "- Метка темпа ({{bpm}}) на отметке {{tick}} в треке {{number}}: [{{name}}] была проигнорирована.",
         fr = "- Le tempo ({{bpm}}) au tick {{tick}} de la piste {{number}}: [{{name}}] a été ignoré.",
+        pt = "- O tempo ({{bpm}}) no tick {{tick}} na faixa {{number}}: [{{name}}] foi ignorado.",
     ),
     ImportWarningTempoIgnoredInPreMeasure(
         en = "- Tempo label ({{bpm}}) in pre-measures was ignored.",
@@ -629,6 +721,7 @@ enum class Strings(
         zhCN = "- 未能读取前置小节中的速度记号（{{bpm}}）。",
         ru = "- Метка темпа ({{bpm}}) в предварительных мерах была проигнорирована.",
         fr = "- Le tempo ({{bpm}}) dans les pré-mesures a été ignorée.",
+        pt = "- O tempo ({{bpm}}) na pré-medida foi ignorado.",
     ),
     ImportWarningDefaultTempoFixed(
         en = "- Default tempo was too large ({{bpm}}), so it was fixed to 120.",
@@ -636,6 +729,7 @@ enum class Strings(
         zhCN = "- 默认速度过大（{{bpm}}），已修正为120。",
         ru = "- Темп по умолчанию слишком большой ({{bpm}}), поэтому он был исправлен на 120.",
         fr = "- Le tempo par défaut était trop grand ({{bpm}}), il a donc été fixé à 120.",
+        pt = "- O tempo padrão era muito grande ({{bpm}}), então foi fixado em 120.",
     ),
     ImportWarningTimeSignatureNotFound(
         en = "- No time signature labels found in the imported project.",
@@ -643,6 +737,7 @@ enum class Strings(
         zhCN = "- 在导入的工程中未找到节拍记号。",
         ru = "- В импортированном проекте не найдено меток временных сигнатур.",
         fr = "- Aucune signature rythmique n'a trouvé dans le projet importé.",
+        pt = "- Nenhum compasso foi encontrado no projeto importado.",
     ),
     ImportWarningTimeSignatureIgnoredInTrack(
         en =
@@ -656,6 +751,9 @@ enum class Strings(
         fr =
             "La signature rythmique ({{timeSignature}}) à la mesure {{measure}}" +
                 " de la piste {{number}} : [{{name}}]] a été ignoré.",
+        pt =
+            "- O compasso ({{timeSignature}}) na medida {{measure))" +
+                "na Faixa {{number}}: [{{name}}] foi ignorado.",
     ),
     ImportWarningTimeSignatureIgnoredInPreMeasure(
         en = "- Time signature label ({{timeSignature}}) in pre-measures was ignored.",
@@ -663,6 +761,7 @@ enum class Strings(
         zhCN = "- 未能读取前置小节中的节拍记号（{{timeSignature}}）。",
         ru = "- Метка временной сигнатуры ({{timeSignature}}) в предварительных мерах была проигнорирована.",
         fr = "- La signature rythmique ({{timeSignature}}) dans les pré-mesures a été ignorée.",
+        pt = "- A etiqueta de fórmula de compasso ({{timeSignature}}) nas pré-medições foi ignorada.",
     ),
     ImportWarningIncompatibleFormatSerializationVersion(
         en =
@@ -672,6 +771,7 @@ enum class Strings(
             "- 入力ファイルのシリアライゼーションバージョン {{dataVersion}} への互換性がないため、すべてのデータを読み込んでいない" +
                 "可能性があります。現在のバージョンは {{currentVersion}} です。",
         zhCN = "- 因为导入的文件的序列化版本 {{dataVersion}} 与当前版本不兼容，部分数据可能丢失。当前版本：{{currentVersion}}。",
+        pt = "- Como a versão serializada do arquivo importado, {{dataVersion}}, é incompatível com a versão atual, alguns dados podem ser perdidos. Versão atual: {{currentVersion}}",
     ),
     VsqxFormatDescription(
         en = "Project for VOCALOID4",
@@ -679,6 +779,7 @@ enum class Strings(
         zhCN = "VOCALOID4 工程",
         ru = "Проект для VOCALOID4",
         fr = "Projet pour VOCALOID4",
+        pt = "Projeto para VOCALOID4",
     ),
     VprFormatDescription(
         en = "Project for VOCALOID5",
@@ -686,6 +787,7 @@ enum class Strings(
         zhCN = "VOCALOID5 工程",
         ru = "Проект для VOCALOID5",
         fr = "Projet pour VOCALOID5",
+        pt = "Projeto para VOCALOID5",
     ),
     UstFormatDescription(
         en = "Project for UTAU",
@@ -693,6 +795,7 @@ enum class Strings(
         zhCN = "UTAU 工程",
         ru = "Проект для UTAU",
         fr = "Projet pour UTAU",
+        pt = "Projeto para UTAU",
     ),
     UstxFormatDescription(
         en = "Project for OpenUtau",
@@ -700,6 +803,7 @@ enum class Strings(
         zhCN = "OpenUtau 工程",
         ru = "Проект для OpenUtau",
         fr = "Projet pour OpenUtau",
+        pt = "Projeto para OpenUtau",
     ),
     CcsFormatDescription(
         en = "Project for CeVIO Creative Studio",
@@ -707,6 +811,7 @@ enum class Strings(
         zhCN = "CeVIO Creative Studio 工程",
         ru = "Проект для CeVIO Creative Studio",
         fr = "Projet pour CeVIO Creative Studio",
+        pt = "Projeto para CeVIO Creative Studio",
     ),
     SvpFormatDescription(
         en = "Project for Synthesizer V Studio",
@@ -714,6 +819,7 @@ enum class Strings(
         zhCN = "Synthesizer V Studio 工程",
         ru = "Проект для Synthesizer V Studio",
         fr = "Projet pour Synthesizer V Studio",
+        pt = "Projeto para Synthesizer V Studio",
     ),
     S5pFormatDescription(
         en = "Project for Synthesizer V",
@@ -721,6 +827,7 @@ enum class Strings(
         zhCN = "Synthesizer V 工程",
         ru = "Проект для Synthesizer V",
         fr = "Projet pour Synthesizer V",
+        pt = "Projeto para Synthesizer V",
     ),
     MusicXmlFormatDescription(
         en = "MusicXML $MUSIC_XML_VERSION (CeVIO style)",
@@ -728,6 +835,7 @@ enum class Strings(
         zhCN = "MusicXML $MUSIC_XML_VERSION（参照CeVIO标准）",
         ru = "MusicXML $MUSIC_XML_VERSION (стиль CeVIO)",
         fr = "MusicXML $MUSIC_XML_VERSION (style CeVIO)",
+        pt = "MusicXML $MUSIC_XML_VERSION (style CeVIO)",
     ),
     DvFormatDescription(
         en = "Project for DeepVocal",
@@ -735,6 +843,7 @@ enum class Strings(
         zhCN = "DeepVocal 工程",
         ru = "Проект для DeepVocal",
         fr = "Projet pour DeepVocal",
+        pt = "Projeto para DeepVocal",
     ),
     VsqFormatDescription(
         en = "Project for VOCALOID2",
@@ -742,6 +851,7 @@ enum class Strings(
         zhCN = "VOCALOID2 工程",
         ru = "Проект для VOCALOID2",
         fr = "Projet pour VOCALOID2",
+        pt = "Projeto para VOCALOID2",
     ),
     VocaloidMidiFormatDescription(
         en = "Project for VOCALOID1",
@@ -749,6 +859,7 @@ enum class Strings(
         zhCN = "VOCALOID1 工程",
         ru = "Проект для VOCALOID1",
         fr = "Projet pour VOCALOID1",
+        pt = "Projeto para VOCALOID1",
     ),
     UfDataFormatDescription(
         en = "UtaFormatix Data Format (v$UtaFormatixDataVersion)",
@@ -756,6 +867,7 @@ enum class Strings(
         zhCN = "UtaFormatix 数据格式（v$UtaFormatixDataVersion）",
         ru = "Формат данных UtaFormatix (v$UtaFormatixDataVersion)",
         fr = "Format de données UtaFormatix (v$UtaFormatixDataVersion)",
+        pt = "Formato de dados UtaFormatix (v$UtaFormatixDataVersion)",
     ),
     StandardMidDescription(
         en = "Standard MIDI File",
@@ -763,6 +875,7 @@ enum class Strings(
         zhCN = "标准MIDI文件",
         ru = "Стандартный MIDI-файл",
         fr = "Fichier MIDI standard",
+        pt = "Arquivo MIDI padrão",
     ),
     VoiSonaFormatDescription(
         en = "Project for VoiSona",
@@ -770,6 +883,7 @@ enum class Strings(
         zhCN = "VoiSona 工程",
         ru = "Проект для VoiSona",
         fr = "Projet pour VoiSona",
+        pt = "Projeto para VoiSona",
     ),
     ExportButton(
         en = "Export",
@@ -777,6 +891,7 @@ enum class Strings(
         zhCN = "导出",
         ru = "Экспортировать",
         fr = "Exporter",
+        pt = "Exportar",
     ),
     RestartButton(
         en = "Back to the beginning",
@@ -784,6 +899,7 @@ enum class Strings(
         zhCN = "回到初始页面",
         ru = "Вернуться на главную",
         fr = "Retour au début",
+        pt = "Voltar ao início",
     ),
     ExportNotificationPhonemeResetRequiredVSQ(
         en = "Phonemes of all notes were set to \"a\". Please reset them to make it sound correctly.",
@@ -795,6 +911,7 @@ enum class Strings(
         fr =
             "Les phonèmes de toutes les notes ont été réglés sur \"a\"." +
                 " Veuillez les réinitialiser pour que le son soit correct.",
+        pt = "Os fonemas de todas as notas foram definidos como \"a\". Por favor, redefina-os para que o som esteja correto.",
     ),
     ExportNotificationPhonemeResetRequiredV4(
         en =
@@ -810,6 +927,9 @@ enum class Strings(
         fr =
             "Les phonèmes de toutes les notes ont été réglés sur \"a\"." +
                 " Veuillez utiliser \"Lyrics\" -> \"Convert Phonemes\" dans le menu de VOCALOID4 pour les réinitialiser.",
+        pt =
+            "Os fonemas de todas as notas foram definidos como \"a\"." +
+                " Por favor use \"Lyrics\" -> \"Convert Phonemes\" no menu do VOCALOID4 para resetá-los.",
     ),
     ExportNotificationPhonemeResetRequiredV5(
         en =
@@ -826,6 +946,9 @@ enum class Strings(
         fr =
             "Les phonèmes de toutes les notes ont été réglés sur \"a\". Veuillez utiliser \"Lyrics\" ->" +
                 " \"Convert Phonemes to Match Languages\" dans le menu de VOCALOID5 pour les réinitialiser.",
+        pt = 
+            "Os fonemas de todas as notas foram definidos como \"a\". Por favor use \"Job\" -> \"Convert Phonemes to Match Languages\"" +
+                " no menu do VOCALOID5 para resetá-los."
     ),
     ExportNotificationTimeSignatureIgnored(
         en = "Could not convert time signatures to the target format.",
@@ -833,6 +956,7 @@ enum class Strings(
         zhCN = "未能将节拍记号导出到目标格式。",
         ru = "Не удалось преобразовать временные сигнатуры в целевой формат.",
         fr = "Impossible de convertir les signatures rythmiques au format cible.",
+        pt = "Não foi possível converter os compassos para o formato.",
     ),
     ExportNotificationPitchDataExported(
         en =
@@ -850,6 +974,9 @@ enum class Strings(
             "Certains paramètres de hauteur ont été exportés. Pour une plus grande précision," +
                 " vous devrez peut-être désactiver les paramètres de transition de hauteur" +
                 " et de vibrato dans l'éditeur cible.",
+        pt =
+            "Alguns parâmetros de tom foram exportados. Para uma maior precisão de reprodução," +
+                " você pode precisar desativar as configurações de transição de tom e vibrato no editor de destino.",
     ),
     ExportNotificationDataOverLengthLimitIgnored(
         en = "Data exceeding length limit ignored. Please check if your output includes all your intended data.",
@@ -863,6 +990,7 @@ enum class Strings(
         fr =
             "Les données dépassant la limite de longueur sont ignorées." +
                 " Veuillez vérifier que votre exportation inclut toutes les données prévues.",
+        pt = "Dados que excedem o limite de comprimento foram ignorados. Verifique se a sua saída inclui todos os dados pretendidos.",
     ),
     SlightRestsFilling(
         en = "Fill short rests",
@@ -870,6 +998,7 @@ enum class Strings(
         zhCN = "填充短休止符",
         ru = "Заполнить короткие промежутки",
         fr = "Remplir les courtes périodes de silence",
+        pt = "Preencher pausas curtas",
     ),
     SlightRestsFillingDescription(
         en = "Extend note to fill the short rest between it and its next note",
@@ -877,6 +1006,7 @@ enum class Strings(
         zhCN = "当音符之间存在较短的休止符时，将前一个音符延长来填充休止符",
         ru = "Расширить ноту, чтобы заполнить короткий промежуток между ней и следующей нотой",
         fr = "Prolonger la note pour combler le court silence qui la sépare de la note suivante.",
+        pt = "Prolongar a nota para preencher a pequena pausa entre ela e a próxima nota.",
     ),
     SlightRestsFillingThresholdLabel(
         en = "Max length to be processed (exclusive)",
@@ -884,6 +1014,7 @@ enum class Strings(
         zhCN = "适用该处理的最大长度（不含）",
         ru = "Максимальная длина, подлежащая обработке (исключительная)",
         fr = "Longueur maximale à traiter (exclusive)",
+        pt = "Comprimento máximo a ser processado (exclusivo)",
     ),
     SlightRestsFillingThresholdItem(
         en = "1/{{denominator}} note",
@@ -891,6 +1022,7 @@ enum class Strings(
         zhCN = "{{denominator}}分音符",
         ru = "1/{{denominator}} ноты",
         fr = "1/{{denominator}} note",
+        pt = "Nota de 1/{{denominator}}",
     ),
     UseSimpleImport(
         en = "Simple Import",
@@ -898,6 +1030,7 @@ enum class Strings(
         zhCN = "简单导入",
         ru = "Простой импорт",
         fr = "Importation simple",
+        pt = "Importação simples",
     ),
     UseSimpleImportDescription(
         en = "Ignore detail parameters to accelerate importing",
@@ -905,6 +1038,7 @@ enum class Strings(
         zhCN = "忽略参数，使导入更快",
         ru = "Игнорировать подробные параметры для ускорения импорта",
         fr = "Ignorer les paramètres détaillés pour accélérer l'importation",
+        pt = "Ignore os parâmetros de detalhes para acelerar a importação.",
     ),
     UseMultipleMode(
         en = "Batch conversion",
@@ -912,6 +1046,7 @@ enum class Strings(
         zhCN = "批量转换",
         ru = "Пакетное преобразование",
         fr = "Conversion par lots",
+        pt = "Conversão em lote",
     ),
     UseMultipleModeDescription(
         en = "Convert multiple files at once. Every file will be saved separately as a project.",
@@ -921,11 +1056,13 @@ enum class Strings(
         fr =
             "Convertir plusieurs fichiers en même temps. " +
                 "Chaque fichier sera enregistré apartment en tant que projet.",
+        pt = "Converta vários arquivos de uma só vez. Cada arquivo será salvo separadamente como um projeto.",
     ),
     MultipleModeForMultipleFileFormatWarningTitle(
         en = "You are using the batch conversion mode",
         ja = "一括変換モードを使用しています",
         zhCN = "您正在使用批量转换模式",
+        pt = "Você está usando o modo de conversão em lote",
     ),
     MultipleModeForMultipleFileFormatWarningDescription(
         en =

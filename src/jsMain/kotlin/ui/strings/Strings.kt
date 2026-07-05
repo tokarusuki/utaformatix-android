@@ -127,7 +127,7 @@ enum class Strings(
         zhCN = "清理并转换歌词（仅日语）",
         ru = "Очистка и преобразование текстов (только для японских текстов)",
         fr = "Nettoyage et conversion des paroles (seulement pour les paroles en japonais)",
-        pt = "Limpar e converter letras (apenas para letras Japonesas)",
+        pt = "Limpar e converter letras (apenas para letras japonesas)",
     ),
     FromLyricsTypeLabel(
         en = "Original lyrics type (analysis result: {{type}})",
@@ -135,7 +135,7 @@ enum class Strings(
         zhCN = "原歌词类型（分析结果为：{{type}}）",
         ru = "Исходный тип текстов (результат анализа: {{type}})",
         fr = "Type de paroles originales (résultat de l'analyse : {{type}})",
-        pt = "Tipo das letras originais (resultado da análise: {{type}}",
+        pt = "Tipo das letras originais (resultado da análise: {{type}})",
     ),
     ToLyricsTypeLabel(
         en = "Target lyrics type",
@@ -1081,6 +1081,12 @@ enum class Strings(
                 "当前您正在此模式下导入只支持单个轨道的格式。\n" +
                 "请确保您不想合并输入轨道后再继续。\n" +
                 "如果您不想使用此模式，请返回导入页面并关闭“批量转换”选项。",
+        pt =
+            "No modo de conversão em lote, todos os arquivos serão salvos separadamente como um projeto sem ser mesclado.\n" +
+                "Atualmente, você está usando este modo com um formato de importação que não suporta múltiplas faixas.\n" +
+                "Certifique-se de que não deseja mesclar as faixas de entrada antes de prosseguir.\n" +
+                "Se você não quiser usar este modo," +
+                "por favor, retorne à página de Importação e desative a opção \"Conversão em lote\.",
     ),
     ;
 
@@ -1091,6 +1097,7 @@ enum class Strings(
             Japanese -> ja
             SimplifiedChinese -> zhCN
             Russian -> ru
+            Portuguese -> pt
         }
 }
 
